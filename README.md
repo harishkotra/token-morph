@@ -14,6 +14,9 @@ answer, with a `DIVERGED` badge and both sha256 digests side by side.
 The point is to show, with visual proof, how an older model relates to a newer one —
 where they are the same, and exactly where they diverge.
 
+<img width="1624" height="1001" alt="Screenshot at Sep 15 18-55-05" src="https://github.com/user-attachments/assets/dc8d460a-108c-41cf-8b06-3dba837ae3ea" />
+<img width="1624" height="1000" alt="Screenshot at Sep 15 18-55-29" src="https://github.com/user-attachments/assets/33fed07b-2c92-421b-9d95-d0e3c246fc4f" />
+
 ---
 
 ## Table of contents
