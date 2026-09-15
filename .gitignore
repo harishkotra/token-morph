@@ -1,0 +1,111 @@
+# ---------------------------------------------------------------- secrets ---
+# Never commit real credentials. The app reads its key from the browser at runtime,
+# but a local .env is still the easiest way to leak one by accident.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.json
+credentials.json
+
+# ----------------------------------------------------------- dependencies ---
+node_modules/
+.pnp
+.pnp.js
+.pnp.cjs
+.yarn/cache
+.yarn/install-state.gz
+jspm_packages/
+
+# ---------------------------------------------------------------- builds ----
+dist/
+dist-ssr/
+build/
+out/
+.vite/
+.cache/
+.parcel-cache/
+.turbo/
+.esbuild/
+*.tsbuildinfo
+vite.config.ts.timestamp-*
+
+# ------------------------------------------------------------------ logs ----
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm/
+
+# ------------------------------------------------------------ test output ---
+coverage/
+.nyc_output/
+*.lcov
+test-results/
+playwright-report/
+blob-report/
+.playwright/
+# NOTE: screenshots committed for the README live in docs/ and are NOT ignored.
+# Only throwaway capture directories are.
+.tmp-screenshots/
+capture-tmp/
+
+# ------------------------------------------------------------- editors ------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.iml
+*.swp
+*.swo
+*.swn
+*~
+.project
+.classpath
+.settings/
+
+# ------------------------------------------------------------------- os -----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --------------------------------------------------------------- runtime ----
+# Local scratch space, not part of the app.
+tmp/
+temp/
+.tmp/
+*.pid
+*.seed
+*.pid.lock
+
+# ------------------------------------------------------------ node misc -----
+.npmrc.local
+.node_repl_history
+.node-version
+.nvmrc.local
+
+# --------------------------------------------------------------- tooling ----
+# Agent and editor scratch that should stay local.
+.agent/
+.claude/
+.cursor/
+.aider*
+.continue/
+
+docs/
